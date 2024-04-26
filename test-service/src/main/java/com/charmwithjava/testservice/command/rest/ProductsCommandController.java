@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.charmwithjava.testservice.command.CreateProductCommand;
 
+import jakarta.validation.Valid;
+
 
 @RestController
 @RequestMapping("/products")
@@ -34,7 +36,7 @@ public class ProductsCommandController {
 //    }
 
     @PostMapping
-    public String createProduct(@RequestBody CreateProductRestModel createProductRestModel) {
+    public String createProduct(@Valid @RequestBody CreateProductRestModel createProductRestModel) {
         CreateProductCommand createProductCommand = CreateProductCommand.builder()
             .productId(UUID.randomUUID().toString())
             .title(createProductRestModel.getTitle())
@@ -43,13 +45,14 @@ public class ProductsCommandController {
             .build();
 
         String returnValue;
-        try {
-             returnValue = commandGateway.sendAndWait(createProductCommand);
-        }
-        catch (Exception ex) {
-            return ex.getLocalizedMessage();
-        }
+        // try {
+        //      returnValue = commandGateway.sendAndWait(createProductCommand);
+        // }
+        // catch (Exception ex) {
+        //     return ex.getLocalizedMessage();
+        // }
 
+        returnValue = commandGateway.sendAndWait(createProductCommand);
         return returnValue;
     }
 

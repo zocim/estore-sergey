@@ -8,7 +8,22 @@
     <option name="showLiveBeansGraph" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90030e69-a871-4be3-97cb-e2c623bce333" name="Changes" comment="" />
+    <list default="true" id="90030e69-a871-4be3-97cb-e2c623bce333" name="Changes" comment="Initial commit.">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_3_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/command/ProductLookupEventsHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/command/interceptors/CreateProductCommandInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/core/data/ProductLookupEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/core/data/ProductLookupRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/core/errorhandling/ProductsServiceErrorHandling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/query/ProductsQueryHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/command/ProductAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/command/ProductAggregate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/command/rest/CreateProductRestModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/command/rest/CreateProductRestModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/command/rest/ProductsCommandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/command/rest/ProductsCommandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/query/ProductEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/query/ProductEventsHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/test-service/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +78,9 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "TF_FMT": "false",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/charmwithjava/repos/estore",
     "project.structure.last.edited": "Modules",
@@ -77,6 +95,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.charmwithjava.testservice.query.rest" />
       <recent name="com.charmwithjava.productsservice.query.rest" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -170,8 +189,16 @@
       <workItem from="1712863990654" duration="81000" />
       <workItem from="1712864077088" duration="251000" />
       <workItem from="1712864398577" duration="1559000" />
-      <workItem from="1712998697405" duration="17831000" />
+      <workItem from="1712998697405" duration="32992000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit.">
+      <created>1714056593750</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714056593750</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +241,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -289,24 +320,54 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/query/ProductEventHandler.java</url>
+          <url>file://$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/query/ProductEventsHandler.java</url>
           <line>34</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/query/ProductEventHandler.java</url>
+          <url>file://$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/query/ProductEventsHandler.java</url>
           <line>36</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/command/rest/ProductsCommandController.java</url>
-          <line>52</line>
+          <line>55</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/command/rest/ProductsCommandController.java</url>
-          <line>37</line>
+          <line>39</line>
           <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/command/interceptors/CreateProductCommandInterceptor.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/command/interceptors/CreateProductCommandInterceptor.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/command/interceptors/CreateProductCommandInterceptor.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/command/ProductLookupEventsHandler.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/core/errorhandling/ProductsServiceErrorHandling.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test-service/src/main/java/com/charmwithjava/testservice/core/errorhandling/ProductsServiceErrorHandling.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

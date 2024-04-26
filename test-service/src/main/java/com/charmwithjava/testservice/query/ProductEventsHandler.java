@@ -6,6 +6,7 @@
 
 package com.charmwithjava.testservice.query;
 
+import org.axonframework.config.ProcessingGroup;
 import org.axonframework.eventhandling.EventHandler;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,12 +22,13 @@ import com.charmwithjava.testservice.core.events.ProductCreatedEvent;
  */
 
 @Component
-public class ProductEventHandler {
+@ProcessingGroup("product-group")
+public class ProductEventsHandler {
 
     private ProductsRepository productsRepository;
 
     @Autowired
-    public ProductEventHandler(final ProductsRepository productsRepository) {
+    public ProductEventsHandler(final ProductsRepository productsRepository) {
         this.productsRepository = productsRepository;
     }
 
